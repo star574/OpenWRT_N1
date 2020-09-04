@@ -29,4 +29,6 @@ svn co https://github.com/Lienol/openwrt/trunk/package/diy/adguardhome package/a
 svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome package/luci-app-adguardhome  #adguardhome广告过滤
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-theme-atmaterial package/luci-theme-atmaterial #atmaterial主题
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns  #smartdns
+sed -i '$a src-git kenzok https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 
